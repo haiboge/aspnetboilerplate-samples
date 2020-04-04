@@ -6,7 +6,7 @@
     "apps": [
         {
             "root": "HeroApp/src",
-            "outDir": "dist",
+            "outDir": "wwwroot/dist",
             "assets": [
                 "assets",
                 "favicon.ico"
@@ -19,9 +19,13 @@
             "testTsconfig": "tsconfig.spec.json",
             "prefix": "app",
             "styles": [
+                "./assets/bootstrap.min.css",
                 "styles.css"
             ],
-            "scripts": [],
+            "scripts": [
+                "../../node_modules/jquery/dist/jquery.min.js",
+                "../../node_modules/bootstrap/dist/js/bootstrap.min.js"
+            ],
             "environmentSource": "environments/environment.ts",
             "environments": {
                 "dev": "environments/environment.ts",
@@ -43,7 +47,7 @@
             "testTsconfig": "tsconfig.spec.json",
             "prefix": "app",
             "styles": [
-                "../../node_modules/bootstrap/dist/css/bootstrap.min.css",
+                "./assets/bootstrap.min.css",
                 "styles.css"
             ],
             "scripts": [
